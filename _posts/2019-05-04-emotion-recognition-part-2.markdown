@@ -257,7 +257,6 @@ def parse_line(line):
     fields = tf.string_to_number(fields)
     fields = tf.reshape(fields, [48, 48, 1])
     fields = tf.divide(fields, 255.0)
-    fields = augment_color(fields)
     features = {
         'Pixels': fields
     }
