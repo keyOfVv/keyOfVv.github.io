@@ -245,7 +245,7 @@ classifier = tf.estimator.Estimator(
 
 ```python
 # 单条素材含两列数据, emotion(整型数), pixels(字符串)
-# tensorflow将以record_defaults作为数据类型的模板, 从csv文件的每一行中提取数据;
+# tensorflow将以record_defaults作为数据类型的默认值, 从csv文件的每一行中提取数据;
 record_defaults = [[0], ['']]
 
 def parse_line(line):

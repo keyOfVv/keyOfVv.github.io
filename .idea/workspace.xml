@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a997fd0-15cb-4641-8d50-57e66d95151f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-1.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-1.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-2.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-2.markdown" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,24 +12,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-1.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="437">
-                <caret line="213" lean-forward="true" selection-start-line="213" selection-end-line="213" />
+              <first_editor relative-caret-position="452">
+                <caret line="214" column="6" lean-forward="true" selection-start-line="214" selection-start-column="6" selection-end-line="214" selection-end-column="6" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-2.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="30">
-                <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+              <first_editor relative-caret-position="397">
+                <caret line="255" column="26" lean-forward="true" selection-start-line="255" selection-start-column="26" selection-end-line="255" selection-end-column="26" />
               </first_editor>
               <second_editor />
             </state>
@@ -68,10 +68,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-2.markdown" />
         <option value="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-3.markdown" />
         <option value="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-4.markdown" />
         <option value="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-1.markdown" />
+        <option value="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-2.markdown" />
       </list>
     </option>
   </component>
@@ -166,12 +166,12 @@
       <workItem from="1557889858105" duration="1107000" />
       <workItem from="1557987882872" duration="543000" />
       <workItem from="1557990823579" duration="228000" />
-      <workItem from="1558062209293" duration="17684000" />
+      <workItem from="1558062209293" duration="17827000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60420000" />
+    <option name="totallyTimeSpent" value="60563000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -241,16 +241,6 @@
     <entry file="file://$PROJECT_DIR$/_site/images/1f7291faf1f51aa31649476837c438b46abc54e6.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-2.markdown">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="30">
-            <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-3.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -274,8 +264,18 @@
     <entry file="file://$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-1.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="437">
-            <caret line="213" lean-forward="true" selection-start-line="213" selection-end-line="213" />
+          <first_editor relative-caret-position="452">
+            <caret line="214" column="6" lean-forward="true" selection-start-line="214" selection-start-column="6" selection-end-line="214" selection-end-column="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-2.markdown">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="397">
+            <caret line="255" column="26" lean-forward="true" selection-start-line="255" selection-start-column="26" selection-end-line="255" selection-end-column="26" />
           </first_editor>
           <second_editor />
         </state>
