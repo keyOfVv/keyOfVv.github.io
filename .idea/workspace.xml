@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5a997fd0-15cb-4641-8d50-57e66d95151f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-1.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-1.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-2.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-2.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-3.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-3.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-4.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-4.markdown" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,12 +12,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-1.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="45">
-                <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="33" />
+              <first_editor relative-caret-position="284">
+                <caret line="177" column="21" selection-start-line="177" selection-start-column="21" selection-end-line="177" selection-end-column="21" />
               </first_editor>
               <second_editor />
             </state>
@@ -43,15 +40,15 @@
         <entry file="file://$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-3.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="45">
-                <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+              <first_editor relative-caret-position="195">
+                <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-4.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
@@ -71,10 +68,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-1.markdown" />
         <option value="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-2.markdown" />
         <option value="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-3.markdown" />
         <option value="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-4.markdown" />
+        <option value="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-1.markdown" />
       </list>
     </option>
   </component>
@@ -169,12 +166,12 @@
       <workItem from="1557889858105" duration="1107000" />
       <workItem from="1557987882872" duration="543000" />
       <workItem from="1557990823579" duration="228000" />
-      <workItem from="1558062209293" duration="17100000" />
+      <workItem from="1558062209293" duration="17382000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59836000" />
+    <option name="totallyTimeSpent" value="60118000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -244,16 +241,6 @@
     <entry file="file://$PROJECT_DIR$/_site/images/1f7291faf1f51aa31649476837c438b46abc54e6.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-1.markdown">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="45">
-            <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="33" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-2.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -267,8 +254,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-3.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+          <first_editor relative-caret-position="195">
+            <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
           </first_editor>
           <second_editor />
         </state>
@@ -279,6 +266,16 @@
         <state split_layout="FIRST">
           <first_editor relative-caret-position="120">
             <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-1.markdown">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="284">
+            <caret line="177" column="21" selection-start-line="177" selection-start-column="21" selection-end-line="177" selection-end-column="21" />
           </first_editor>
           <second_editor />
         </state>
