@@ -16,8 +16,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-1.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="284">
-                <caret line="177" column="21" selection-start-line="177" selection-start-column="21" selection-end-line="177" selection-end-column="21" />
+              <first_editor relative-caret-position="437">
+                <caret line="213" lean-forward="true" selection-start-line="213" selection-end-line="213" />
               </first_editor>
               <second_editor />
             </state>
@@ -166,12 +166,12 @@
       <workItem from="1557889858105" duration="1107000" />
       <workItem from="1557987882872" duration="543000" />
       <workItem from="1557990823579" duration="228000" />
-      <workItem from="1558062209293" duration="17382000" />
+      <workItem from="1558062209293" duration="17684000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60118000" />
+    <option name="totallyTimeSpent" value="60420000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -274,8 +274,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-1.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="284">
-            <caret line="177" column="21" selection-start-line="177" selection-start-column="21" selection-end-line="177" selection-end-column="21" />
+          <first_editor relative-caret-position="437">
+            <caret line="213" lean-forward="true" selection-start-line="213" selection-end-line="213" />
           </first_editor>
           <second_editor />
         </state>
