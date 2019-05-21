@@ -5,20 +5,20 @@ date:   2019-05-17 18:44:00 +0800
 ---
 
 本系列博客描述如何利用Tensorflow完成人类面部表情识别CNN模型的训练与应用, 由四部分组成:
-1. [模型素材库准备工作][part-1];
-2. **模型的定义与训练**;
+1. **模型素材库准备工作**;
+2. [模型的定义与训练][part-2];
 3. [模型的保存与读取][part-3];
 4. [在iOS应用中使用模型][part-4];
 
 训练环境:
 
-|名称        |版本
-|-----------|---|
-|macOS      |10.13.6 ([如何配置macOS平台的GPU训练][tf-gpu-mac])
-|Python     |3.6.8
-|Tensorflow |1.8.0 (因兼容性问题, 未选择最新版本)
-|CUDA       |[10][CUDA]
-|cuDNN      |[7.4][cuDNN]
+|名称            |版本
+|---------------|---|
+|Ubuntu         |18.04.2 LTS
+|Python         |3.5.2
+|Tensorflow-gpu |1.13.1
+|CUDA           |[10][CUDA]
+|cuDNN          |[7.4][cuDNN]
 
 
 在[第一部分][part-1]中, 我们完成了[FER2013][fer2013]素材库的预处理(分组/切割). 本文介绍如何搭建CNN模型, 并通过[Tensorflow][tf]的[Estimator API][est-api]进行训练. 
@@ -57,117 +57,83 @@ date:   2019-05-17 18:44:00 +0800
 
 ```python
 import tensorflow as tf
+from tensorflow.keras.layers import *
 
 # Define CNN
 def cnn_model_fn(features, labels, mode, params):
     """Model function for CNN."""
+    training = bool(mode == tf.estimator.ModeKeys.TRAIN)
+    
     # input
     net = tf.placeholder_with_default(features['Pixels'], (None, 48, 48, 1), name='input_tensor')
 
     # bn-0
-    net = tf.layers.batch_normalization(
-        inputs=net,
-        training=mode == tf.estimator.ModeKeys.TRAIN,
-    )
+    net = tf.layers.batch_normalization(inputs=net, training=training)
 
     # conv2d-1
-    net = tf.layers.conv2d(
-        inputs=net,
-        filters=64,
+    net = Conv2D(
+        filters=32,
         kernel_size=[3, 3],
         padding='same',
         activation=tf.nn.relu
-    )
+    )(net)
     
     # avg_p2d-1
-    net = tf.layers.average_pooling2d(
-        inputs=net,
-        pool_size=[2, 2],
-        strides=2
-    )
+    net = AveragePooling2D(pool_size=[2, 2], strides=2)(net)
 
     # bn-1
-    net = tf.layers.batch_normalization(
-        inputs=net,
-        training=mode == tf.estimator.ModeKeys.TRAIN,
-    )
+    net = tf.layers.batch_normalization(inputs=net, training=training)
 
     # conv2d-2
-    net = tf.layers.conv2d(
-        inputs=net,
+    net = Conv2D(
         filters=64,
         kernel_size=[3, 3],
         padding='same',
         activation=tf.nn.relu
-    )
+    )(net)
     
     # max_p2d-1
-    net = tf.layers.max_pooling2d(
-        inputs=net,
-        pool_size=[2, 2],
-        strides=2
-    )
+    net = MaxPool2D(pool_size=[2, 2], strides=2)(net)
 
     # bn-2
-    net = tf.layers.batch_normalization(
-        inputs=net,
-        training=mode == tf.estimator.ModeKeys.TRAIN
-    )
+    net = tf.layers.batch_normalization(inputs=net, training=training)
 
     # conv2d-3
-    net = tf.layers.conv2d(
-        inputs=net,
+    net = Conv2D(
         filters=128,
         kernel_size=[3, 3],
         padding='same',
         activation=tf.nn.relu
-    )
+    )(net)
 
     # max_p2d-2
-    net = tf.layers.max_pooling2d(
-        inputs=net,
-        pool_size=[2, 2],
-        strides=2
-    )
+    net = MaxPool2D(pool_size=[2, 2], strides=2)(net)
 
     # CONV2D -> DENSE
     net = tf.reshape(net, [-1, 6 * 6 * 128])
 
     # dense-1
-    net = tf.layers.dense(
-        inputs=net,
+    net = Dense(
         units=256,
-        kernel_regularizer=keras.regularizers.l2(0.001),
-        activation=tf.nn.relu
-    )
+        activation=tf.nn.relu,
+        kernel_regularizer=keras.regularizers.l2(0.001)
+    )(net)
 
     # bn-3
-    net = tf.layers.batch_normalization(
-        inputs=net,
-        training=mode == tf.estimator.ModeKeys.TRAIN
-    )
+    net = tf.layers.batch_normalization(inputs=net, training=training)
 
     # dropout-1
-    net = tf.layers.dropout(
-        inputs=net,
-        rate=0.4,
-        seed=random.randint(1, 100),
-        training=mode == tf.estimator.ModeKeys.TRAIN
-    )
+    net = Dropout(rate=0.4, seed=random.randint(1, 100))(net, training=training)
 
     # dense-2
-    net = tf.layers.dense(
-        inputs=net,
+    net = Dense(
         units=128,
-        kernel_regularizer=keras.regularizers.l2(0.001),
-        activation=tf.nn.relu
-    )
+        activation=tf.nn.relu,
+        kernel_regularizer=keras.regularizers.l2(0.001)
+    )(net)
 
     # Logits Layer
-    logits = tf.layers.dense(
-        inputs=net,
-        units=params['num_classes']
-    )
+    logits = Dense(units=params['num_classes'])(net)
 
     # Generate Predictions
     predictions = {

@@ -12,13 +12,13 @@ date:   2019-05-17 18:44:00 +0800
 
 训练环境:
 
-|名称        |版本
-|-----------|---|
-|macOS      |10.13.6 ([如何配置macOS平台的GPU训练][tf-gpu-mac])
-|Python     |3.6.8
-|Tensorflow |1.8.0 (因兼容性问题, 未选择最新版本)
-|CUDA       |[10][CUDA]
-|cuDNN      |[7.4][cuDNN]
+|名称            |版本
+|---------------|---|
+|Ubuntu         |18.04.2 LTS
+|Python         |3.5.2
+|Tensorflow-gpu |1.13.1
+|CUDA           |[10][CUDA]
+|cuDNN          |[7.4][cuDNN]
 
 ## 素材库
 
