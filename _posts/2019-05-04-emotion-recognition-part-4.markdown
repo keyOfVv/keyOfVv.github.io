@@ -20,66 +20,33 @@ date:   2019-05-17 18:44:00 +0800
 |CUDA           |[10][CUDA]
 |cuDNN          |[7.4][cuDNN]
 
-### 模型转化
 
 [第三部分][part-3]中介绍了如何方便地保存和读取`.pb`模型. 生产环境下, 大型模型导出的`.pb`文件体积往往较大, 内含几何数量级的神经元. 对于桌面端和后端来说, 不论是算力, 功耗还是存储空间, 这些都不是问题; 但在寸土寸金, 算力有限的移动端, 庞大的模型意味着臃肿的App体积, 漫长的下载, 还有耗时耗电的运算过程.   
 
-在移动端, 我们需要精简版的TensorFlowLite模型(`.tflite`), 下面介绍如何生成`tflite`模型:
+在移动端, 我们需要精简版的TensorFlowLite模型(`.tflite`).
 
-#### 1. 冻结
+#### 1. 转化
 
-首先, 使用TensorFlow内置的`freeze_graph`命令将训练过程中的checkpoint冻结为`pb`模型:
+`tensorflow.lite.TFLiteConverter`支持转化多种格式的模型, 这里只介绍将`saved_model`转化成`tflite`模型:
 
-```bash
-cd /path/to/project
+```python
+import tensorflow as tf
 
-freeze_graph \
---input_graph=path/to/graph.pbtxt \
---input_checkpoint=path/to/model.ckpt-xxx \
---input_binary=false \
---output_graph=frozen_model.pb \
---output_node_names=#tensor_name#
+saved_model_dir = 'path/to/saved_model'
+dst_path = 'path/to/converted.tflite'
+
+converter = tf.lite.TFLiteConverter.from_saved_model(
+    saved_model_dir=saved_model_dir,
+    input_arrays=['input_tensor'],
+    input_shapes={'input_tensor': [1, 48, 48, 1]},
+    output_arrays=['softmax_tensor']
+)
+tflite_model = converter.convert()
+open(dst_path, 'wb').write(tflite_model)
 ```
 
-#### 2. 精简
+几行代码就能搞定, 非常简单.
 
-完整的TensorFlow模型包含一些"冗余"的操作和运算层, 例如只有在训练中才会用到的操作, 移除这些不需要的部分有助于缩小模型文件的体积. 此外, 在合理范围内降低某些运算步骤的精度, 可以提高整体的运算速度. 
-
-精简通过`optimize_for_inference`命令来完成(该命令需要事先[编译](opt_comp), 根据硬件配置, 编译耗时可能较长): 
-
-```bash
-cd /path/to/tensorflow
-
-# 编译
-bazel build tensorflow/python/tools:optimize_for_inference
-
-# 精简
-bazel-bin/tensorflow/python/tools/optimize_for_inference \
---input=path/to/frozen_model.pb \
---output=path/to/optimized_model.pb \
---frozen_graph=True \
---input_names=#input_tensor_name# \
---output_names=#output_tensor_name#
-```
-
-#### 3. 转化
-
-最后, 使用同样是TensorFlow内置的`toco`命令生成TensorFlowLite模型:
-
-```bash
-cd /path/to/project
-
-toco \
---graph_def_file=path/to/optimized_model.pb \
---input_format=TENSORFLOW_GRAPHDEF \
---output_format=TFLITE \
---inference_type=FLOAT \
---input_type=FLOAT \
---input_arrays=#input_tensor_name# \
---output_arrays=#output_tensor_name# \
---input_shapes=1,48,48,1 \
---output_file=path/to/model.tflite
-```
 
 ### iOS端的应用
 
