@@ -307,7 +307,6 @@ if IPython.version_info > (6,2,0,''):
 <img src="{{site.baseurl}}/images/4de38764ac1a873880c0ef144ba1360866ed8f14.gif" width="300" />
 
 
-
 [fer2013]: https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data
 [ref_tutorial]: https://www.tensorflow.org/alpha/tutorials/generative/dcgan
 [fer2013_sharding]: {% post_url 2019-05-04-emotion-recognition-part-1 %}
