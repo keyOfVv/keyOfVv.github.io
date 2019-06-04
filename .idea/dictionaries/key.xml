@@ -2,6 +2,7 @@
   <dictionary name="key">
     <words>
       <w>cuda</w>
+      <w>dcgan</w>
       <w>podfile</w>
       <w>tensorboard</w>
       <w>tensorflow</w>
