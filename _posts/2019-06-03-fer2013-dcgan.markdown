@@ -304,7 +304,6 @@ if IPython.version_info > (6,2,0,''):
     display.Image(filename=anim_file)
 ```
 
-## 效果展示:
 <img src="{{site.baseurl}}/images/4de38764ac1a873880c0ef144ba1360866ed8f14.gif" width="300" />
 
 

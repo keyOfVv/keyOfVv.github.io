@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a997fd0-15cb-4641-8d50-57e66d95151f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_posts/2019-06-03-fer2013-dcgan.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/key.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/key.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-1.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-1.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-2.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-2.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-3.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-3.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-4.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-05-04-emotion-recognition-part-4.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-06-03-fer2013-dcgan.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-06-03-fer2013-dcgan.markdown" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +16,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2019-06-03-fer2013-dcgan.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="165">
-                <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+              <first_editor relative-caret-position="521">
+                <caret line="306" column="6" selection-start-line="306" selection-start-column="6" selection-end-line="306" selection-end-column="6" />
               </first_editor>
               <second_editor />
             </state>
@@ -143,12 +137,12 @@
       <workItem from="1558513537080" duration="1327000" />
       <workItem from="1559554820369" duration="2403000" />
       <workItem from="1559557912214" duration="5485000" />
-      <workItem from="1559618610898" duration="1538000" />
+      <workItem from="1559618610898" duration="1731000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74461000" />
+    <option name="totallyTimeSpent" value="74654000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -260,8 +254,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2019-06-03-fer2013-dcgan.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="165">
-            <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <first_editor relative-caret-position="521">
+            <caret line="306" column="6" selection-start-line="306" selection-start-column="6" selection-end-line="306" selection-end-column="6" />
           </first_editor>
           <second_editor />
         </state>
