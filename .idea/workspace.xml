@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a997fd0-15cb-4641-8d50-57e66d95151f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/_posts/2019-06-03-fer2013-dcgan.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-06-03-fer2013-dcgan.markdown" afterDir="false" />
-    </list>
+    <list default="true" id="5a997fd0-15cb-4641-8d50-57e66d95151f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,20 +9,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/2019-06-03-fer2013-dcgan.markdown">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="521">
-                <caret line="306" column="6" selection-start-line="306" selection-start-column="6" selection-end-line="306" selection-end-column="6" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -137,16 +122,15 @@
       <workItem from="1558513537080" duration="1327000" />
       <workItem from="1559554820369" duration="2403000" />
       <workItem from="1559557912214" duration="5485000" />
-      <workItem from="1559618610898" duration="1731000" />
+      <workItem from="1559618610898" duration="1958000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74654000" />
+    <option name="totallyTimeSpent" value="74881000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2832723" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -254,8 +238,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2019-06-03-fer2013-dcgan.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="521">
-            <caret line="306" column="6" selection-start-line="306" selection-start-column="6" selection-end-line="306" selection-end-column="6" />
+          <first_editor relative-caret-position="626">
+            <caret line="312" lean-forward="true" selection-start-line="312" selection-end-line="312" />
           </first_editor>
           <second_editor />
         </state>
